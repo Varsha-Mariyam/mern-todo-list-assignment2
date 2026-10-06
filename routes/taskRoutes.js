@@ -2,7 +2,7 @@ const express = require('express');
 const Task = require('../models/Task');
 
 const router = express.Router();
-
+// All routes in this file are mounted under /api/tasks.
 function cleanTitle(value) {
   return String(value ?? '').trim();
 }
